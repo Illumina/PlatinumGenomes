@@ -14,7 +14,15 @@ can be downloaded from the AWS S3 bucket `platinum-genomes`, for example using t
 aws s3 cp s3://platinum-genomes/2017-1.0 pg2017 --recursive
 ```
 
-Truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@ussd-ftp.illumina.com/), e.g.:
+If you don't have AWS credentials, you can use `wget` or similar with the [file URIs in this repo](files/), e.g.:
+
+```bash
+wget -xi files/2016-1.0.files
+```
+
+You can then use the relevant md5 checksum in each release to validate data integrity.
+
+Finally, truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@ussd-ftp.illumina.com/), e.g.:
 
 ```sh
 wget ftp://platgene_ro:''@ussd-ftp.illumina.com/2016-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz
