@@ -6,18 +6,15 @@ Platinum Genomes truthset variants were validated using haplotype inheritance in
 
 ## Truthsets
 
-Truthsets are made up of a VCF of validated variant records and a BED file of confident regions. Download
-these files either by cloning this repository (for the latest release), or by downloading an archive of
-a specific [tagged release](https://git.illumina.com/bmoore1/platinum-genomes/releases).
+Truthsets are made up of a VCF of validated variant records and a BED file of confident regions. These files
+can be downloaded from the AWS S3 bucket `platinum-genomes`, for example using the
+[AWS CLI](https://aws.amazon.com/cli/):
 
-Note this repo uses [git LFS](https://git-lfs.github.com/) to track large files more efficiently. If you want a
-full checkout you need to install git LFS (e.g. for OS X: `brew install git-lfs`). Then use `git clone` as normal.
+```bash
+aws s3 cp s3://platinum-genomes/2017-1.0 pg2017 --recursive
+```
 
-You can also download selected files through the github web UI, for example:
-* [NA12878 hg38 truth VCF file](truthsets/hg38/NA12878.vcf.gz)
-* [NA12878 hg38 confident regions BED file](truthsets/hg38/ConfidentRegions.bed.gz)
-
-Finally, truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@ussd-ftp.illumina.com/), e.g.:
+Truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@ussd-ftp.illumina.com/), e.g.:
 
 ```sh
 wget ftp://platgene_ro:''@ussd-ftp.illumina.com/2016-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz
