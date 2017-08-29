@@ -6,13 +6,20 @@ Platinum Genomes truthset variants were validated using haplotype inheritance in
 
 ## Truthsets
 
-Truthsets are made up of a VCF of validated variant records and a BED file of confident regions. These files
-can be downloaded from the AWS S3 bucket `platinum-genomes`, for example using the
-[AWS CLI](https://aws.amazon.com/cli/):
+Truthsets are made up of a VCF of validated variant records and a BED file of confident regions. These
+files aren't huge (00s of MB) but are too large to play nicely with git and github, here's a few ways to download:
+
+### AWS CLI
+
+Truthset files are stored in an AWS S3 bucket called `platinum-genomes`, one way to download is via the [AWS CLI](https://aws.amazon.com/cli/):
 
 ```bash
 aws s3 cp s3://platinum-genomes/2017-1.0 pg2017 --recursive
 ```
+
+You can also explore the bucket and download individual files with this [S3 bucket display](https://illumina.github.io/PlatinumGenomes/).
+
+### wget
 
 If you don't have AWS credentials, you can use `wget` or similar with the [file URIs in this repo](files/), e.g.:
 
@@ -20,7 +27,7 @@ If you don't have AWS credentials, you can use `wget` or similar with the [file 
 wget -xi files/2016-1.0.files
 ```
 
-You can then use the relevant md5 checksum in each release to validate data integrity.
+You can then use the relevant md5 checksum in each release to validate data integrity. 
 
 Finally, truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@ussd-ftp.illumina.com/), e.g.:
 
@@ -28,7 +35,7 @@ Finally, truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@us
 wget ftp://platgene_ro:''@ussd-ftp.illumina.com/2016-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz
 ```
 
-### Usage
+## Usage
 
 To compare a VCF against these truthsets, we recommend using [hap.py](https://github.com/Illumina/hap.py) which
 performs a sophisticated haplotype comparison rather than a simpler tool such as `bcftools isec`.
