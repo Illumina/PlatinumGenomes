@@ -1,0 +1,16 @@
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/ReleaseNotes.txt
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/ConfidentRegions.bed.gz
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/ConfidentRegions.bed.gz.tbi
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/NA12877/NA12877.vcf.gz
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/NA12877/NA12877.vcf.gz.tbi
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/NA12878/NA12878.vcf.gz
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/NA12878/NA12878.vcf.gz.tbi
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg19/small_variants/ReleasedFrom.txt
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/ConfidentRegions.bed.gz
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/ConfidentRegions.bed.gz.tbi
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/NA12877/NA12877.vcf.gz
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/NA12877/NA12877.vcf.gz.tbi
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz.tbi
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/hg38/small_variants/ReleasedFrom.txt
+https://s3.eu-central-1.amazonaws.com/platinum-genomes/2016-1.0/md5sum.txt
