@@ -17,11 +17,11 @@ Truthset files are stored in an AWS S3 bucket called `platinum-genomes`, one way
 aws s3 cp s3://platinum-genomes/2017-1.0 pg2017 --recursive
 ```
 
-You can also explore the bucket and download individual files with this [S3 bucket display](https://illumina.github.io/PlatinumGenomes/).
+To download without AWS credentials, add the `--no-sign-request` flag. You can also explore the bucket and download individual files with this [S3 bucket display](https://illumina.github.io/PlatinumGenomes/).
 
 ### wget
 
-If you don't have AWS credentials, you can use `wget` or similar with the [file URIs in this repo](files/), e.g.:
+Alternatively, use `wget` or similar with the [file URIs in this repo](files/), e.g.:
 
 ```bash
 wget -xi files/2016-1.0.files
