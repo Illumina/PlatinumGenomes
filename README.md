@@ -41,7 +41,7 @@ To compare a VCF against these truthsets, we recommend using [hap.py](https://gi
 performs a sophisticated haplotype comparison rather than a simpler tool such as `bcftools isec`.
 
 Applications wrapping hap.py and containing these truthsets are available on the following platforms:
-* BaseSpace Sequence Hub (VCAT and hap.py applications)
+* BaseSpace Sequence Hub ([Hap.py Benchmarking](https://basespace.illumina.com/apps/3067064/Hap-py-Benchmarking) and [VCAT](https://basespace.illumina.com/apps/2106105/Variant-Calling-Assessment-Tool))
 * PrecisionFDA (GA4GH Benchmarking)
 
 ## Details
