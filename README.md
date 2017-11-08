@@ -24,7 +24,7 @@ To download without AWS credentials, add the `--no-sign-request` flag. You can a
 Alternatively, use `wget` or similar with the [file URIs in this repo](files/), e.g.:
 
 ```bash
-wget -xi files/2016-1.0.files
+wget -xi files/2017-1.0.files
 ```
 
 You can then use the relevant md5 checksum in each release to validate data integrity. 
@@ -32,7 +32,7 @@ You can then use the relevant md5 checksum in each release to validate data inte
 Finally, truthset files can also be downloaded via [FTP](ftp://platgene_ro:''@ussd-ftp.illumina.com/), e.g.:
 
 ```sh
-wget ftp://platgene_ro:''@ussd-ftp.illumina.com/2016-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz
+wget ftp://platgene_ro:''@ussd-ftp.illumina.com/2017-1.0/hg38/small_variants/NA12878/NA12878.vcf.gz
 ```
 
 ## Usage
